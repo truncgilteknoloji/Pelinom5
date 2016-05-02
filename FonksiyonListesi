@@ -1,0 +1,91 @@
+`wl($varsayilan="tr");` 
+> What Language. Seçili olan dilin ne olduğunu çıktılar
+
+`meta($c)`
+> Meta Etiketlerini çıktılar. `$c` content dizisini temsil eden parametredir.
+
+`ci($slug,$size)`
+> Content Image. Bir `$slug` değerine ait içeriğin `$size` ölçülerinde ekli resim dosyasını çıktılar.
+
+`cir($slug)`
+> Content Image. Bir `$slug` değerine ait içeriğin ekli resim dosyasını çıktılar.
+
+cd($slug,$type="*.jpg");
+Content directory. Bir $slug değerine sahip ek dosyalar klasörünün içeriklerini dizi olarak döndürür. Yönetim panelinden girilen bir içeriğin ek dosyalar dizinine ait dosyaları döndürür.
+
+c($slug)
+Content. Bir #slug değerine sahip içerik bilgilerini dizi olarak döndürür. title, html, slug vs..
+
+ct($slug)
+Content Title. Bir $slug değerine sahip başlık bilgisini döndürür.
+
+cs($slug)
+Content Title. Bir $slug değerine sahip takma ad bilgisini döndürür.
+
+url($c); 
+Content url. Bir $c dizisinin url bilgisini döndürür.
+
+meta($c)
+Bir içeriğe ait SEO uyumlu meta etiketleri oluşturur.
+
+e($deger);
+echo çıktısının türevi
+
+e2($deger);
+$deger ifadesini seçilen dile göre çıktısını yapar.
+
+r($img,$size="1024",$dir="file/");
+Width değerine göre aspect:ratio bir kuralına uygun resim dosyasını çıktılar.
+
+r2($img,$size="1024",$dir="file/")
+Height değerine göre aspect:ratio kuralına uygun bir resim dosyasını çıktılar.
+
+set($alan,$return="")
+Yönetim panelinden belirtilen bir ayarı çıktılar. Return parametresi yoksa e2() ile ekrana yazdırır. Varsa return ile ifadeyi döndürür.
+
+cok($id,$key)
+Content Other Key. Bir içeriğe ait alt özelliğin çıktılanmasını sağlar.
+
+cok2($id,$key)
+Content Other Key. Bir içeriğe ait alt özelliğin çeviri yapılarak çıktılanmasını sağlar.
+
+cokr($id,$key)
+Content Other Key. Bir içeriğe ait alt özelliğin çeviri yapılarak döndürülmesini sağlar.
+
+content($slug,$where="");
+Yayında olan bir içeriği döndürür
+
+contents($slug="",$where="",$limit="0,100")
+Yayında olan $slug kategorisindeki alt içerikleri döndürür.
+
+katisset($ara,$slug)
+Bir içeriğin bir kategori uzantısına sahip olup olmadığını sorgular
+
+get($parametre)
+Bir $_GET değerini döndürür
+
+post($parametre)
+Bir $_POST değerini döndürür
+
+ksorgu($tablo,$diger="");
+Bir select * from tablo sorgusu oluşturur
+
+getiiset()
+Bir get değişkeninin gelip gelmediğini sorgular
+
+postisset()
+Bir post değişkenin gelip gelmediğini sorgular
+
+oturumisset()
+Bir oturum değişkeninin gelip gelmediğini sorgular
+
+oturumAc();
+Oturum işlemlerini başlatır
+
+tt()
+Türkçe tarih çıktılar
+
+zf()
+Zaman farkını çıktılar
+
+
